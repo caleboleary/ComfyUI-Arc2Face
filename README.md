@@ -79,6 +79,10 @@ After installation and downloading the model files, you'll find the following no
 
 You can use these nodes to create workflows for face-based image generation and transformation in ComfyUI.
 
+## Examples
+
+- todo
+
 ## TODO
 
 - It'd be nice to support the controlnet that is trained on this, but the required preprocessor looks difficult to install/work with - I may work on that eventually or test to see if easier preprocessors can be made to work with the controlnet. If anyone is so inclined feel free to open a PR.
@@ -92,5 +96,4 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 ## Acknowledgements
 
 - Original Arc2Face model by [foivospar](https://github.com/foivospar/Arc2Face)
-- InsightFace project for face detection and recognition models
-- Hugging Face for hosting the Arc2Face model files
+- Useful gradio demo by [camenduru](https://github.com/camenduru/Arc2Face-jupyter)
