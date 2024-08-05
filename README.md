@@ -87,7 +87,7 @@ find the json workflows for these in the examples folder.
 
 ![single face image generation](examples/singleinput.PNG)
 
-### Multiple faces
+### Multiple faces (tends to have better results)
 
 ![multiple face image generation](examples/multiinput.png)
 
@@ -113,7 +113,18 @@ find the json workflows for these in the examples folder.
 
 ## Disclaimer
 
-I'm aware this kind of tech can be used for immoral/illegal things, by using this code, you're agreeing not to do any harmful acts.
+By using this node, you agree to:
+
+1. **Legal & Ethical Use**: Comply with all applicable laws and use this technology ethically.
+2. **Consent**: Obtain consent from individuals before using their likeness.
+3. **No Harmful Content**: Refrain from creating deepfakes, pornography, or content that harasses or defames others.
+4. **Transparency**: Disclose when content has been altered using this technology.
+5. **Intellectual Property**: Respect copyrights and other IP rights.
+6. **No Impersonation**: Don't use for fraudulent impersonation.
+
+**Note**: This node is provided "as is" without warranties. The creator is not liable for misuse or any consequences arising from its use.
+
+By using this node, you acknowledge and agree to these terms. Use responsibly.
 
 ## Contributing
 
