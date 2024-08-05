@@ -101,6 +101,7 @@ find the json workflows for these in the examples folder.
 
 ## Tips
 
+- The model works best near 512x512 - if you have to do smaller/bigger I recommend scaling near this size and then up/downscaling afterwards to your desired size.
 - Averaging methods if passing multiple faces mess with how the facial embeds are combined. In my experience median is best for a few inputs, and ensemble can be good for many.
 - n_outliers on the face extractor node removes the n faces farthest from the cluster. This can be useful if you know there are some background faces being caught that aren't your character, as their face should be quite different than most.
 - I didn't create an inpainting node, but you can effectively inpaint the face automatically with some [Face Analysis](https://github.com/cubiq/ComfyUI_FaceAnalysis) nodes, see [Latent Vision's video](https://www.youtube.com/watch?v=UTmwyxHQ7pM)
