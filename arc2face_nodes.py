@@ -2,6 +2,7 @@ import os
 import logging
 import torch
 import numpy as np
+import math
 from PIL import Image
 import cv2
 import folder_paths

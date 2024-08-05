@@ -2,6 +2,8 @@
 
 This ComfyUI node library builds upon the work done to train the [Arc2Face](https://github.com/foivospar/Arc2Face) model by foivospar. It provides a set of nodes for ComfyUI that allow users to extract face embeddings, generate images based on these embeddings, and perform image-to-image transformations.
 
+![einstein](examples/einstein.png)
+
 ## Features
 
 - Face embedding extraction from images
