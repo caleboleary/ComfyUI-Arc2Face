@@ -110,6 +110,7 @@ find the json workflows for these in the examples folder.
 - It'd be nice to support the controlnet that is trained on this, but the required preprocessor looks difficult to install/work with - I may work on that eventually or test to see if easier preprocessors can be made to work with the controlnet. If anyone is so inclined feel free to open a PR.
 - would like to make the loader nodes download the files if they don't exist
 - could probably collapse the 2 generators into 1, where you pass empty and 100 denoise for non img2img
+- I can add a positive prompt, but in my testing, any positive prompt at all ruined outputs, as this is heavily finetuned on face embeddings only
 
 ## Disclaimer
 
