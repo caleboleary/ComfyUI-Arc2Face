@@ -1,0 +1,624 @@
+{
+  "last_node_id": 104,
+  "last_link_id": 147,
+  "nodes": [
+    {
+      "id": 100,
+      "type": "ImageBatch",
+      "pos": [
+        4965,
+        1654
+      ],
+      "size": {
+        "0": 210,
+        "1": 46
+      },
+      "flags": {},
+      "order": 9,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image1",
+          "type": "IMAGE",
+          "link": 139
+        },
+        {
+          "name": "image2",
+          "type": "IMAGE",
+          "link": 142
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            136
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ImageBatch"
+      }
+    },
+    {
+      "id": 97,
+      "type": "LoadImage",
+      "pos": [
+        4415,
+        1406
+      ],
+      "size": [
+        259.093256181608,
+        191.18837618977204
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            137
+          ],
+          "shape": 3,
+          "slot_index": 0
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "scottd1.jpg",
+        "image"
+      ]
+    },
+    {
+      "id": 99,
+      "type": "LoadImage",
+      "pos": [
+        4421,
+        1764
+      ],
+      "size": [
+        237.4932500780924,
+        204.18837618977204
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            138
+          ],
+          "shape": 3,
+          "slot_index": 0
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "scottd3.webp",
+        "image"
+      ]
+    },
+    {
+      "id": 101,
+      "type": "ImageBatch",
+      "pos": [
+        4447,
+        1659
+      ],
+      "size": {
+        "0": 210,
+        "1": 46
+      },
+      "flags": {},
+      "order": 7,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image1",
+          "type": "IMAGE",
+          "link": 137
+        },
+        {
+          "name": "image2",
+          "type": "IMAGE",
+          "link": 138
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            139
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ImageBatch"
+      }
+    },
+    {
+      "id": 95,
+      "type": "LoadImage",
+      "pos": [
+        4696,
+        1447
+      ],
+      "size": [
+        210,
+        235.18837618977204
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            140
+          ],
+          "shape": 3,
+          "slot_index": 0
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "scottd2.webp",
+        "image"
+      ]
+    },
+    {
+      "id": 98,
+      "type": "LoadImage",
+      "pos": [
+        4695,
+        1830
+      ],
+      "size": [
+        210,
+        240.9883639827408
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            141
+          ],
+          "shape": 3,
+          "slot_index": 0
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "scottd4.jpg",
+        "image"
+      ]
+    },
+    {
+      "id": 102,
+      "type": "ImageBatch",
+      "pos": [
+        4700,
+        1731
+      ],
+      "size": {
+        "0": 210,
+        "1": 46
+      },
+      "flags": {},
+      "order": 8,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image1",
+          "type": "IMAGE",
+          "link": 140
+        },
+        {
+          "name": "image2",
+          "type": "IMAGE",
+          "link": 141
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            142
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ImageBatch"
+      }
+    },
+    {
+      "id": 93,
+      "type": "Arc2FaceEncoderLoader",
+      "pos": [
+        4760,
+        1254
+      ],
+      "size": {
+        "0": 315,
+        "1": 58
+      },
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "ARC2FACE_ENCODER",
+          "type": "ARC2FACE_ENCODER",
+          "links": [
+            144
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Arc2FaceEncoderLoader"
+      },
+      "widgets_values": [
+        "encoder"
+      ]
+    },
+    {
+      "id": 91,
+      "type": "Arc2FaceUNetLoader",
+      "pos": [
+        4756,
+        1357
+      ],
+      "size": {
+        "0": 315,
+        "1": 58
+      },
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "ARC2FACE_UNET",
+          "type": "ARC2FACE_UNET",
+          "links": [
+            145
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Arc2FaceUNetLoader"
+      },
+      "widgets_values": [
+        "diffusion_pytorch_model.safetensors"
+      ]
+    },
+    {
+      "id": 92,
+      "type": "Arc2FaceFaceExtractor",
+      "pos": [
+        4940,
+        1506
+      ],
+      "size": {
+        "0": 315,
+        "1": 82
+      },
+      "flags": {},
+      "order": 10,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 136
+        }
+      ],
+      "outputs": [
+        {
+          "name": "FACE_EMBEDDING",
+          "type": "FACE_EMBEDDING",
+          "links": [
+            143
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Arc2FaceFaceExtractor"
+      },
+      "widgets_values": [
+        "median",
+        0
+      ]
+    },
+    {
+      "id": 104,
+      "type": "LoadImage",
+      "pos": [
+        5305,
+        1615
+      ],
+      "size": [
+        349.4932500780924,
+        403.7884128108658
+      ],
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            146
+          ],
+          "shape": 3,
+          "slot_index": 0
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "mj2.webp",
+        "image"
+      ]
+    },
+    {
+      "id": 96,
+      "type": "PreviewImage",
+      "pos": [
+        5775,
+        1229
+      ],
+      "size": [
+        395.49331111324864,
+        437.58840060383454
+      ],
+      "flags": {},
+      "order": 12,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 147
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "PreviewImage"
+      }
+    },
+    {
+      "id": 103,
+      "type": "Arc2FaceImg2ImgGenerator",
+      "pos": [
+        5434,
+        1244
+      ],
+      "size": {
+        "0": 315,
+        "1": 286
+      },
+      "flags": {},
+      "order": 11,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "face_embedding",
+          "type": "FACE_EMBEDDING",
+          "link": 143
+        },
+        {
+          "name": "unet",
+          "type": "ARC2FACE_UNET",
+          "link": 145
+        },
+        {
+          "name": "encoder",
+          "type": "ARC2FACE_ENCODER",
+          "link": 144
+        },
+        {
+          "name": "initial_image",
+          "type": "IMAGE",
+          "link": 146
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            147
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Arc2FaceImg2ImgGenerator"
+      },
+      "widgets_values": [
+        "ugly, deformed, noisy, blurry, low contrast, split image",
+        30,
+        2.7,
+        1,
+        59,
+        "randomize",
+        0.52,
+        ""
+      ]
+    }
+  ],
+  "links": [
+    [
+      136,
+      100,
+      0,
+      92,
+      0,
+      "IMAGE"
+    ],
+    [
+      137,
+      97,
+      0,
+      101,
+      0,
+      "IMAGE"
+    ],
+    [
+      138,
+      99,
+      0,
+      101,
+      1,
+      "IMAGE"
+    ],
+    [
+      139,
+      101,
+      0,
+      100,
+      0,
+      "IMAGE"
+    ],
+    [
+      140,
+      95,
+      0,
+      102,
+      0,
+      "IMAGE"
+    ],
+    [
+      141,
+      98,
+      0,
+      102,
+      1,
+      "IMAGE"
+    ],
+    [
+      142,
+      102,
+      0,
+      100,
+      1,
+      "IMAGE"
+    ],
+    [
+      143,
+      92,
+      0,
+      103,
+      0,
+      "FACE_EMBEDDING"
+    ],
+    [
+      144,
+      93,
+      0,
+      103,
+      2,
+      "ARC2FACE_ENCODER"
+    ],
+    [
+      145,
+      91,
+      0,
+      103,
+      1,
+      "ARC2FACE_UNET"
+    ],
+    [
+      146,
+      104,
+      0,
+      103,
+      3,
+      "IMAGE"
+    ],
+    [
+      147,
+      103,
+      0,
+      96,
+      0,
+      "IMAGE"
+    ]
+  ],
+  "groups": [],
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 1,
+      "offset": [
+        -4336.493250078092,
+        -1091.3883883968033
+      ]
+    }
+  },
+  "version": 0.4
+}

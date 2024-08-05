@@ -81,13 +81,39 @@ You can use these nodes to create workflows for face-based image generation and 
 
 ## Examples
 
-- todo
+find the json workflows for these in the examples folder.
+
+### Simplest usage
+
+![single face image generation](examples/singleinput.PNG)
+
+### Multiple faces
+
+![multiple face image generation](examples/multiinput.png)
+
+### Face Mixing
+
+![mixing two distinct faces](examples/facemixing.PNG)
+
+### Img2Img
+
+![image to image with input faces](examples/i2i.PNG)
+
+## Tips
+
+- Averaging methods if passing multiple faces mess with how the facial embeds are combined. In my experience median is best for a few inputs, and ensemble can be good for many.
+- n_outliers on the face extractor node removes the n faces farthest from the cluster. This can be useful if you know there are some background faces being caught that aren't your character, as their face should be quite different than most.
+- I didn't create an inpainting node, but you can effectively inpaint the face automatically with some [Face Analysis](https://github.com/cubiq/ComfyUI_FaceAnalysis) nodes, see [Latent Vision's video](https://www.youtube.com/watch?v=UTmwyxHQ7pM)
 
 ## TODO
 
 - It'd be nice to support the controlnet that is trained on this, but the required preprocessor looks difficult to install/work with - I may work on that eventually or test to see if easier preprocessors can be made to work with the controlnet. If anyone is so inclined feel free to open a PR.
-- would like to make the loader nodes download pull the files if they don't exist
+- would like to make the loader nodes download the files if they don't exist
 - could probably collapse the 2 generators into 1, where you pass empty and 100 denoise for non img2img
+
+## Disclaimer
+
+I'm aware this kind of tech can be used for immoral/illegal things, by using this code, you're agreeing not to do any harmful acts.
 
 ## Contributing
 
