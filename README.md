@@ -25,7 +25,17 @@ This ComfyUI node library builds upon the work done to train the [Arc2Face](http
    pip install -r requirements.txt
    ```
 
+   or for portable:
+
+   ```
+   python_embeded\python.exe -m pip install -r requirements.txt
+   ```
+
 3. Download the necessary model files (see the "Model Files" section below).
+
+## Troubleshooting
+
+Trouble installing insightface? [reactor](https://github.com/Gourieff/comfyui-reactor-node#i-for-windows-users-if-you-still-cannot-build-insightface-for-some-reasons-or-just-dont-want-to-install-visual-studio-or-vs-c-build-tools---do-the-following) has a nice troubleshooting step
 
 ## Model Files
 

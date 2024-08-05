@@ -1,3 +1,5 @@
 insightface>=0.7.3
-safetensors>=0.3.1
 diffusers>=0.19.3
+opencv-python>=4.5.0 
+onnxruntime>=1.12.0
+transformers==4.34.1
