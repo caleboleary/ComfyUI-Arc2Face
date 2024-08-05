@@ -18,7 +18,7 @@ This ComfyUI node library builds upon the work done to train the [Arc2Face](http
 
    ```
    cd /path/to/ComfyUI/custom_nodes
-   git clone https://github.com/your-username/arc2face-comfyui.git
+   git clone https://github.com/caleboleary/ComfyUI-Arc2Face.git
    ```
 
 2. Install the required dependencies:
