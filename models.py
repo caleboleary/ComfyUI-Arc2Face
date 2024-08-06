@@ -2,7 +2,7 @@ import torch
 from transformers import CLIPTextModel
 from typing import Any, Callable, Dict, Optional, Tuple, Union, List
 from transformers.modeling_outputs import BaseModelOutputWithPooling
-from transformers.models.clip.modeling_clip import _make_causal_mask, _expand_mask
+from transformers.modeling_attn_mask_utils import AttentionMaskConverter
 
 
 class CLIPTextModelWrapper(CLIPTextModel):
@@ -41,11 +41,23 @@ class CLIPTextModelWrapper(CLIPTextModel):
     
         # CLIP's text model uses causal mask, prepare it here.
         # https://github.com/openai/CLIP/blob/cfcffb90e69f37bf2ff1e988237a0fbe41f33c04/clip/model.py#L324
-        causal_attention_mask = _make_causal_mask(input_shape, hidden_states.dtype, device=hidden_states.device)
+        attn_mask_converter = AttentionMaskConverter(is_causal=True)
+        causal_attention_mask = attn_mask_converter.to_causal_4d(
+            batch_size=input_shape[0],
+            query_length=input_shape[1],
+            key_value_length=input_shape[1],
+            dtype=hidden_states.dtype,
+            device=hidden_states.device
+        )
         # expand attention_mask
         if attention_mask is not None:
             # [bsz, seq_len] -> [bsz, 1, tgt_seq_len, src_seq_len]
-            attention_mask = _expand_mask(attention_mask, hidden_states.dtype)
+            attention_mask = attn_mask_converter.to_4d(
+                attention_mask,
+                input_shape[1],
+                key_value_length=input_shape[1],
+                dtype=hidden_states.dtype
+            )
     
         encoder_outputs = self.text_model.encoder(
             inputs_embeds=hidden_states,
