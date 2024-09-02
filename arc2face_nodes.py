@@ -230,7 +230,7 @@ class Arc2FaceGenerator:
 
     def load_pipeline(self, unet, encoder):
         if self.pipe is None:
-            base_model = 'runwayml/stable-diffusion-v1-5'
+            base_model = 'botp/stable-diffusion-v1-5'
             
             self.pipe = StableDiffusionPipeline.from_pretrained(
                 base_model,
@@ -306,7 +306,7 @@ class Arc2FaceImg2ImgGenerator:
 
     def load_pipeline(self, unet, encoder):
         if self.pipe is None:
-            base_model = 'runwayml/stable-diffusion-v1-5'
+            base_model = 'botp/stable-diffusion-v1-5'
             
             self.pipe = AutoPipelineForImage2Image.from_pretrained(
                 base_model,
