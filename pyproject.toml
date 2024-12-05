@@ -1,0 +1,15 @@
+[project]
+name = "comfyui-arc2face"
+description = "This ComfyUI node library builds upon the work done to train the [a/Arc2Face](https://github.com/foivospar/Arc2Face) model by foivospar. It provides a set of nodes for ComfyUI that allow users to extract face embeddings, generate images based on these embeddings, and perform image-to-image transformations."
+version = "1.0.0"
+license = {file = "LICENSE"}
+dependencies = ["insightface>=0.7.3", "diffusers>=0.19.3", "opencv-python>=4.5.0", "onnxruntime>=1.12.0", "transformers==4.34.1"]
+
+[project.urls]
+Repository = "https://github.com/caleboleary/ComfyUI-Arc2Face"
+#  Used by Comfy Registry https://comfyregistry.org
+
+[tool.comfy]
+PublisherId = ""
+DisplayName = "ComfyUI-Arc2Face"
+Icon = ""
